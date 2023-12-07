@@ -1,7 +1,7 @@
 let searchBtn = document.getElementById("search-btn");
 
 searchBtn.addEventListener("click", () => {
-    fetch('http://labs.bible.org/api/?passage=random&type=json')
+    fetch('https://labs.bible.org/api/?passage=random&type=json')
         .then((response) => response.json())
         .then((data) => {
             console.log(data[0].bookname);
