@@ -1,12 +1,45 @@
+
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+.outer-container{
+    margin: 0;
+    padding-top: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.outer-container::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('E:/Bible/Images/background.svg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+  }
+
 .container {
     width: 90%;
     background: rgb(138, 183, 236);
+    display: inline-flexbox;
     background: linear-gradient(311deg, rgba(138, 183, 236, 1) 0%, rgba(160, 131, 211, 1) 100%);
     margin: auto;
-    margin-top: 50px;
+    margin-left: 5%;
     border: 1px solid rgba(255, 255, 255, 0.521);
     border-radius: 10px;
     height: auto;
+    position: absolute;
 }
 
 
@@ -84,7 +117,7 @@ p{
     .bible{
         font-size: 150%;
     }
-
+    
     .container {
         width: 90%;
         height: auto;
